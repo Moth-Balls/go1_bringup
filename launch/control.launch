@@ -1,0 +1,10 @@
+<launch>
+  <param name="use_sim_time" value="false" />
+  <include file="$(find unitree_legged_real)/launch/real.launch">
+    <arg name="ctrl_level" value="highlevel"/>
+  </include>
+    
+  <node pkg="cmd_vel_to_high" type="go1_cmd_bridge.py" name="go1_cmd_bridge" output="screen">
+    <param name="use_sim_time" value="false" />
+  </node>
+</launch>

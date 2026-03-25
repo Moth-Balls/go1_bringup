@@ -1,0 +1,36 @@
+# slam_config.yaml (gmapping) for Unitree Go1
+odom_frame: ros2udp/odom
+base_frame: base_link
+map_frame: map
+
+# Laser topic
+scan_topic: /scan
+
+maxUrange: 10.0
+maxRange: 12.0
+sigma: 0.05
+kernelSize: 1
+lstep: 0.05
+astep: 0.05
+iterations: 5
+lsigma: 0.075
+ogain: 3.0
+lskip: 0
+srr: 0.1
+srt: 0.2
+str: 0.1
+stt: 0.2
+linearUpdate: 0.2
+angularUpdate: 0.1
+temporalUpdate: -1.0
+resampleThreshold: 0.5
+particles: 30
+xmin: -50.0
+ymin: -50.0
+xmax: 50.0
+ymax: 50.0
+delta: 0.05
+gridsize: 0.05
+occ_thresh: 0.25
+llsamplerange: 0.01
+llsamplestep: 0.01
