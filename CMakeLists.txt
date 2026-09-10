@@ -13,7 +13,7 @@ include_directories(
 
 
 catkin_install_python(PROGRAMS
-  scripts/restamp_scan.py
+  # scripts/restamp_scan.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
